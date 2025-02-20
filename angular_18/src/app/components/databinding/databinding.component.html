@@ -1,0 +1,37 @@
+<div class="Main-div">
+
+  <div class="one-way-bind">
+    <h2>From ts to html</h2>
+    <h4>Interpolation</h4>
+    <div>
+      {{courseName}}
+    </div>
+    <input type="text" value="{{courseName}}"/>
+    <div>
+      <input type="{{inputType}}" />
+    </div>
+
+    <h4>Property Binding</h4>
+    <input type="text" [value]="courseName"/>
+    <span><input [type]="inputType" /></span>
+
+    <h2>From html to ts </h2>
+    <h4>Event Binding</h4>
+    <div>
+      <button class="wlcm-btn" (click) = "showMessage('Welcome to screen')"> Show Welcome</button>
+
+  </div>
+  </div>
+  <div class="two-way-bind">
+    <h1>Two Way Data-binding</h1>
+    <h2>From html to ts & ts to html</h2>
+    <h4>Ng Module</h4>
+    <div>
+      <button (click)="changeCourseName()">Change Course</button>
+    </div>
+    <div>
+      <input [(ngModel)]="courseName"/>
+    </div>
+  </div>
+
+</div>
