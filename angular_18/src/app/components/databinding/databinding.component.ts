@@ -11,7 +11,8 @@ export class DatabindingComponent {
   courseName: string = "Angular 18";
   inputType = "checkbox";
   rollNo: number = 123;
-  isIndian: boolean = false;
+  isIndian: boolean = true;
+  stateName:string = "";
 
   currentDate: Date = new Date();
 
